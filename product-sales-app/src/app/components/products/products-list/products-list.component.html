@@ -1,0 +1,47 @@
+<div class="container" style="padding-top: 1rem;">
+  <div class="row">
+    <div class="col-md-3" style="margin-left: auto;padding-bottom: 2rem;">
+      <button class="btn btn-primary float-right" (click)="open()">Add New Product</button>
+    </div>
+
+  </div>
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Price</th>
+          <th scope="col">Sales/Month</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of products; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ data.name}}</td>
+          <td>{{ data.description }}</td>
+          <td>{{ data.price }}</td>
+          <td>{{ data.sales }}</td>
+          <td> <a class="btn btn-danger" data-toggle="tooltip" data-placement="right"
+              title="Delete"
+              data-original-title="Delete" (click)="handleDelete(data)">
+              <i class="flaticon-delete text-muted"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between p-2">
+      <ngb-pagination [collectionSize]="products.length" [(page)]="page" [pageSize]="pageSize"
+        (pageChange)="refreshProducts()">
+      </ngb-pagination>
+
+      <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshProducts()">
+        <option [ngValue]="2">2 items per page</option>
+        <option [ngValue]="4">4 items per page</option>
+        <option [ngValue]="6">6 items per page</option>
+      </select>
+    </div>
+  </div>
+</div>

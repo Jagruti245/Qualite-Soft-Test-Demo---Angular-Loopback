@@ -1,0 +1,22 @@
+{
+  "ids": {
+    "Products": 11,
+    "Transactions": 8
+  },
+  "models": {
+    "Products": {
+      "1": "{\"name\":\"Keyboard\",\"description\":\"HP Typing Keyboard\",\"price\":2000,\"createdAt\":\"2023-03-25T17:20:36.126Z\",\"id\":1}",
+      "2": "{\"name\":\"Mouse\",\"description\":\"Mouse with pad\",\"price\":549,\"createdAt\":\"2023-03-25T17:21:00.251Z\",\"id\":2}",
+      "3": "{\"name\":\"Monitor\",\"description\":\"Samsung LED\",\"price\":19000,\"createdAt\":\"2023-03-25T17:21:22.582Z\",\"id\":3}",
+      "4": "{\"name\":\"Wireless Keyboard+Mouse\",\"description\":\"Combo\",\"price\":1900,\"createdAt\":\"2023-03-25T17:21:58.578Z\",\"id\":4}"
+    },
+    "Transactions": {
+      "1": "{\"message\":\"For ABC Company\",\"quantity\":10,\"productPrice\":2000,\"createdAt\":\"2023-03-25T17:22:31.020Z\",\"productId\":1,\"id\":1}",
+      "2": "{\"message\":\"Mouse - ABC Company\",\"quantity\":15,\"productPrice\":549,\"createdAt\":\"2023-03-25T17:23:19.752Z\",\"productId\":2,\"id\":2}",
+      "3": "{\"message\":\"Monitor - XYZ Company\",\"quantity\":2,\"productPrice\":19000,\"createdAt\":\"2023-03-25T17:23:46.045Z\",\"productId\":3,\"id\":3}",
+      "4": "{\"message\":\"Combo - XYZ Company\",\"quantity\":3,\"productPrice\":1900,\"createdAt\":\"2023-03-25T17:24:17.345Z\",\"productId\":4,\"id\":4}",
+      "5": "{\"message\":\"Adjustable Table for XYZ Company\",\"quantity\":5,\"productPrice\":4000,\"createdAt\":\"2023-03-25T17:49:12.633Z\",\"productId\":5,\"id\":5}",
+      "7": "{\"message\":\"2 psc for ABC Company\",\"quantity\":2,\"productPrice\":1900,\"createdAt\":\"2023-03-25T19:36:40.542Z\",\"productId\":4,\"id\":7}"
+    }
+  }
+}

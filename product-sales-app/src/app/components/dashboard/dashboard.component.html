@@ -1,0 +1,28 @@
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-primary navbar-brand">
+	<div class="row ">
+		<div class="col-10">&nbsp;&nbsp;&nbsp;&nbsp;Qualite Soft Test Demo - Angular | Loopback</div>
+	</div>
+</nav>
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+	<li [ngbNavItem]="1">
+		<a ngbNavLink>Dashboard</a>
+		<ng-template ngbNavContent>
+			<app-sales-chart></app-sales-chart>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="2">
+		<a ngbNavLink>Products</a>
+		<ng-template ngbNavContent>
+			<app-products-list></app-products-list>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="3">
+		<a ngbNavLink>Transactions</a>
+		<ng-template ngbNavContent>
+			<app-transactions-list></app-transactions-list>
+		</ng-template>
+	</li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
